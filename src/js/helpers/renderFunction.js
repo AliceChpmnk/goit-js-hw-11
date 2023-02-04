@@ -30,4 +30,8 @@ function renderGalleryMarkup(images) {
     refs.galleryEl.insertAdjacentHTML('beforeend', createGalletyMarkup(images));
 }
 
-export {createGalletyMarkup, renderGalleryMarkup};
+function clearGalleryMarkup() {
+  refs.galleryEl.innerHTML = "";
+}
+
+export {renderGalleryMarkup, clearGalleryMarkup};

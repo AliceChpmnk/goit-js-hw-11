@@ -1,7 +1,5 @@
-import { PixabayApi } from './js/iamgeApi';
-import {createGalletyMarkup, renderGalleryMarkup } from './js/renderFunction';
-import { refs } from "./js/refs";
+import { refs } from "./js/helpers/refs";
+import { onFormSubmit } from './js/helpers/handlers';
+import { loadMoreBtn } from './js/loadMoreBtn';
 
-
-const imagesApi = new PixabayApi();
-console.log(imagesApi.fetchImages());
+refs.form.addEventListener('submit', onFormSubmit);
